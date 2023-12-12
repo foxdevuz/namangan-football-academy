@@ -15,6 +15,7 @@ class ClubsController extends Controller
         $file = $request->file('file');
         $name = $request->student;
         $birthday = $request->birthday;
+        $postion = $request->student_position;
         $image = Str::random() . '.' . $file->getClientOriginalExtension();
         try {
             $file->storeAs('/public/images', $image);
@@ -23,6 +24,7 @@ class ClubsController extends Controller
                 'birthday' => $birthday,
                 'club' => $club,
                 'image' => $image,
+                'position'=>$postion
             ]);
             return redirect()
                 ->back()

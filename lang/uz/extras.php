@@ -15,5 +15,9 @@ return [
     'email_form'=>"Email",
     'theme_form'=>"Mavzu",
     'send'=>"Xabar yuborish",
-    'for_contact'=>"Aloqa uchun"
+    'for_contact'=>"Aloqa uchun",
+    # show student data translate
+    'name_student'=>"Ismi",
+    'position'=>"Pozitsiyasi",
+    'birthday'=>"Tug'ilgan kuni",
 ];

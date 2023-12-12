@@ -3,50 +3,69 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\MainViewController;
 class DirectionController extends Controller
 {
-    public function breakingNews() {
+    public function breakingNews()
+    {
         return view('extra.breakingNews', [
-            'news'=>MainViewController::breakingNews()
+            'news' => MainViewController::breakingNews()
         ]);
     }
-    public function showNews(Request $req) {
+
+    public function showNews(Request $req)
+    {
         return view('extra.idpage', [
-            'news'=>MainViewController::showNews($req->input('id'))
+            'news' => MainViewController::showNews($req->input('id'))
         ]);
     }
-    public function clubNews() {
+
+    public function clubNews()
+    {
         return view('extra.clubNews');
     }
-    public function u11(Request $request) {
+
+    public function u11(Request $request)
+    {
         return view('club.u-club', [
-            'club'=>MainViewController::showClub($request->input('id')),
-            'coach'=>MainViewController::showClubCoach($request->input('id')),
+            'club' => MainViewController::showClub($request->input('id')),
+            'coach' => MainViewController::showClubCoach($request->input('id')),
         ]);
     }
-    public function clubHistory() {
+
+    public function clubHistory()
+    {
         return view('club.history');
     }
-    public function contact() {
+
+    public function contact()
+    {
         return view('extra.contact');
     }
-    public function lider() {
+
+    public function lider()
+    {
         return view('extra.liders', [
-            'liders'=>MainViewController::showLider()
+            'liders' => MainViewController::showLider()
         ]);
     }
-    public function doctors() {
+
+    public function doctors()
+    {
         return view('extra.doctors', [
-            'doctors'=>MainViewController::showDoctor()
+            'doctors' => MainViewController::showDoctor()
         ]);
     }
-    public function coach(){
+
+    public function coach()
+    {
         return view('extra.coach', [
-            'coaches'=>MainViewController::showCoach()
+            'coaches' => MainViewController::showCoach()
         ]);
     }
-    public function addLiders() {
+
+    public function addLiders()
+    {
         return view('admin.liders');
     }
 }

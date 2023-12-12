@@ -25,6 +25,7 @@ class StoreStudentRequest extends FormRequest
             'student'=>['required'],
             'birthday'=>['required'],
             'file'=>['required'],
+            'student_position'=>['required'],
         ];
     }
 }

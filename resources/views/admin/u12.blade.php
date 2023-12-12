@@ -20,6 +20,9 @@
         <label for="student" class="form-label">O'quvchi</label>
         <input type="text" name="student" id="student" placeholder="O'quvchi ismi" required autocomplete="off" class="form-control">
 
+        <label for="student_position" class="form-label mt-5">Pozitsiyasi</label>
+        <input type="text" name="student_position" id="student_position" placeholder="O'quvchi Pozitsiyasi" required autocomplete="off" class="form-control">
+
         <label for="birthday" class="form-label mt-5">O'quvchi tug'ilgan kuni</label>
         <input type="text" name="birthday" id="birthday" placeholder="Murabbiy tug'ilgan kuni" required autocomplete="off" class="form-control">
 
