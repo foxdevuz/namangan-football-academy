@@ -146,6 +146,7 @@ class UpdateContentsController extends Controller
         $validate = Validator::make($request->all(), [
             'name' => ['required'],
             'birthday' => ['required'],
+            'student_position'=>['required'],
         ]);
 
         if ($validate->fails()) {
@@ -170,6 +171,7 @@ class UpdateContentsController extends Controller
 
             $user->name = $request->input('name');
             $user->birthday = $request->input('birthday');
+            $user->position = $request->input('student_position');
             $user->save();
 
             return redirect()
