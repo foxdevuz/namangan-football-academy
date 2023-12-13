@@ -8,6 +8,7 @@
         </div>
     </div>
         <div class="border-inner text-center p-4 " style="text-align:center">
-        <h4 class="text-uppercase" style="color: blue;">{{ $coach->name }}</h4>
+            <h4 class="text-uppercase" style="color: blue;">{{ $coach->name }}</h4>
+            <h4 class="text-capitalize fs-6" style="color: #313131;">{{ @trans('extras.licence') }} : {{ $coach->licence }}</h4>
     </div>
 </div>

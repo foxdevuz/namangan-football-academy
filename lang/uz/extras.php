@@ -20,4 +20,6 @@ return [
     'name_student'=>"Ismi",
     'position'=>"Pozitsiyasi",
     'birthday'=>"Tug'ilgan kuni",
+    # show coach data translate
+    'licence'=>"Litsenziya"
 ];

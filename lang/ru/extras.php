@@ -20,4 +20,6 @@ return [
     'name_student' => "Имя",
     'position' => "Должность",
     'birthday' => "Дата рождения",
+    # show coach data translate
+    'licence'=>"Лицензия",
 ];

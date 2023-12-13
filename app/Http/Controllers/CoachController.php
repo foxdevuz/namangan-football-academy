@@ -11,10 +11,11 @@ class CoachController extends Controller
 {
     public function store(StoreCoachRequest $request, $club)
     {
-        
         $file = $request->file('file');
         $name = $request->coach;
         $birthday = $request->birthday;
+        $licence= $request->licence;
+
         $image = Str::random() . '.' . $file->getClientOriginalExtension();
         try {
             $file->storeAs('/public/images' , $image);
@@ -23,6 +24,7 @@ class CoachController extends Controller
                 'birthday' => $birthday,
                 'image' => $image,
                 'club' => $club,
+                'licence'=>$licence
             ]);
             return redirect()
                 ->back()

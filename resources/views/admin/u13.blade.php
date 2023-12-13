@@ -8,6 +8,9 @@
         <label for="birthday" class="form-label mt-5">Murabbiy tug'ilgan kuni</label>
         <input type="text" name="birthday" id="birthday" placeholder="Murabbiy tug'ilgan kuni" required autocomplete="off" class="form-control">
 
+        <label for="licence" class="form-label mt-5">Litsenziyasi</label>
+        <input type="text" name="licence" id="licence" placeholder="Litsenziya" required autocomplete="off" class="form-control">
+
         <label for="bg" class="form-label mt-5">Murabbiy rasmi</label>
         <input type="file" name="file" id="bg" required class="form-control">
         <button type="submi" class="btn btn-primary rounded mt-5">Joylash</button>
