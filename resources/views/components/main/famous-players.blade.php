@@ -26,9 +26,6 @@
                 <i class="fa fa-heartbeat fa-2x text-white"></i>
               </div>
               <h4 class="text-uppercase">100% Sog'lom</h4>
-              <p class="mb-0">
-                Bu bolani laboratoriya natijalari xammmasi juda xam zor
-              </p>
             </div>
           </div>
         </div>
